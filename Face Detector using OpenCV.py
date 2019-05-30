@@ -9,7 +9,7 @@ def capture():
 
 def detect():
     im = capture()
-    im = cv2.resize(im,(int(im.shape[1]/8),int(im.shape[0]/8)))
+    #im = cv2.resize(im,(int(im.shape[1]/2),int(im.shape[0]/2)))
     grim = cv2.cvtColor(im,cv2.COLOR_BGR2GRAY)
     fc = cv2.CascadeClassifier(r"H:\PYTHON\Practise\venv\Lib\site-packages\cv2\data\haarcascade_frontalface_default.xml")
 
