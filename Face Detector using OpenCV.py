@@ -1,5 +1,4 @@
 import cv2
-import datetime
 
 def capture():
     video = cv2.VideoCapture(0)
